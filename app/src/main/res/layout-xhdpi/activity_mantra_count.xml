@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3EBD5"
+    tools:context=".MantraCount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#F4F1F0">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:backgroundTint="#FAB30808"
+            android:insetRight="10dp"
+            android:onClick="resetTapped"
+            android:text="RESET"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="30sp" />
+
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="150sp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="00 : 00 : 00"
+            android:textColor="@color/black"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="#2C8314"
+            android:insetRight="10dp"
+            android:onClick="startStopTapped"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="30sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="#F4F1F0">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FA800808"
+                android:insetRight="10dp"
+                android:layout_marginLeft="5sp"
+                android:onClick="resetCount"
+                android:text="RESET"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="30sp" />
+
+            <TextView
+                android:id="@+id/mantra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#151414"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:foregroundTint="#F6F4F4"
+                android:includeFontPadding="false"
+                android:text="00"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        app:srcCompat="@drawable/withoutbordermantracard" />
+
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="149dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:padding="20sp"
+        android:backgroundTint="#E86A082C"
+        android:text="Mantra"
+        android:textColor="@color/white"
+        android:textColorHint="#0E0101"
+        app:cornerRadius="140sp"/>
+
+
+</LinearLayout>
